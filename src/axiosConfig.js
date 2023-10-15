@@ -3,7 +3,7 @@ export const instance = axios.create({
   baseURL: 'http://localhost:1337',
   headers: {
     "Content-Type": "application/json",
-    "Authorization": "Bearer b3c10401855e7c7196541a8dc5f6fad70b194a8fcee5ecae00e55c2b24a909aacc656a0462cc72d2cc45e6c77eeb8ad9850c04d911d4de68acf38e176a7ce034aa6a9df0787ba4356f4babf8f7dc01a3d71e6a66afaf5585fa1eac338b8c01344bd72f465377888f06ec0a785ba368f21506c6232f740c23bd2cbe09fe30b0eb"
+    "Authorization": "Bearer 56384a11051648ed6fb8615a2100395cf1140b5c72cd24f5f9cd48a30b22090e69eacde21684ba0c0c4486e4e61b9a358ea372e27ae2ea4b7a90eec4bef5b6cca0b841afb8b7abf3ffdee8fbbdc1494543226ee0daf9534b6a69b1a1071c1478d7c1230b431b1ed807b406a6bf5e88e6142e7bfad972328744a47e5eb4c4e765"
   }
 })
 
