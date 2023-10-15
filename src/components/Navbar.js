@@ -8,7 +8,7 @@ const Navbar = () => {
       <Cart />
       <div className="navbar bg-secondary">
         <div className="flex-1">
-          <Link className="btn btn-secondary normal-case text-xl" to={'/'}>daisyUI</Link>
+          <Link className="btn btn-secondary normal-case text-xl" to={'/'}>Ecommerce</Link>
         </div>
         <div className="flex-none gap-4">
           <button className="btn btn-square btn-primary flex flex-col justify-center items-center w-[5rem]" onClick={() => document.getElementById('my_modal_4').showModal()}>

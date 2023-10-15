@@ -11,10 +11,10 @@ const Card = ({ item }) => {
   // const linkGoName = linkName.join("++2++")
   // console.log(cart)
   return (
-    <Link to={`/product/${item.attributes.slug}`} className="card w-96 bg-secondary text-secondary-content shadow-xl">
+    <div className="card w-96 bg-secondary text-secondary-content shadow-xl">
       <figure><img src={BASEURL + item.attributes.img.data[0].attributes.formats.medium.url} alt="Shoes" /></figure>
       <div className="card-body">
-        <h2 className="card-title">{item.attributes.name}</h2>
+        <Link to={`/product/${item.attributes.slug}`}><h2 className="card-title">{item.attributes.name}</h2></Link>
         {/* <p>{item.attributes.intro}</p> */}
         <h3 className="card-title">Price: ${item.attributes.price}</h3>
         <div className="card-actions justify-center items-center flex flex-row ">
@@ -33,7 +33,7 @@ const Card = ({ item }) => {
           <button className="btn btn-primary" onClick={() => dispatch(addToCart({ item: { ...item, count } }))}>Add to Cart</button>
         </div>
       </div>
-    </Link>
+    </div>
   )
 }
 
